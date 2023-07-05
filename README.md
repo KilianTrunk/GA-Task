@@ -24,6 +24,16 @@ The API includes tests to ensure its functionality. To run the tests, use the fo
 npm test
 ```
 
+Make sure you have installed "jest" & "supertest" before, otherwise do it with the following commands :
+
+```bash
+npm i jest
+```
+
+```bash
+npm i supertest
+```
+
 ## Error Handling
 
 The API includes basic error handling to handle internal server errors. If any error occurs during the processing of a request, an appropriate error response will be sent.
