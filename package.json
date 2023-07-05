@@ -4,12 +4,14 @@
   "description": "",
   "main": "ping-pong.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "node copy-files.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1"
   },
   "devDependencies": {
     "jest": "^29.6.0",
