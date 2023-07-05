@@ -1,24 +1,25 @@
-const fs = require("fs-extra");
+const fs = require("fs");
 const path = require("path");
 
-const sourceDir = "./node_modules/gameart-task-kilian";
-const destinationDir = "./";
+const sourceDir = path.resolve("node_modules/gameart-task-kilian");
+const destinationDir = path.resolve();
 
-fs.copy(sourceDir, destinationDir, (err) => {
+fs.readdir(sourceDir, (err, files) => {
   if (err) {
-    console.error(err);
-  } else {
-    console.log("Files copied successfully!");
+    console.error("Error reading source directory:", err);
+    return;
   }
-});
 
-const sourcePath = "/node_modules/gameart-task-kilian";
-const destinationPath = ".";
+  files.forEach((file) => {
+    const sourcePath = path.join(sourceDir, file);
+    const destinationPath = path.join(destinationDir, file);
 
-fs.copy(sourcePath, destinationPath)
-  .then(() => {
-    console.log("File copied successfully!");
-  })
-  .catch((err) => {
-    console.error("Error copying file:", err);
+    fs.copyFile(sourcePath, destinationPath, (err) => {
+      if (err) {
+        console.error(`Error copying ${file}:`, err);
+      } else {
+        console.log(`${file} copied successfully!`);
+      }
+    });
   });
+});
