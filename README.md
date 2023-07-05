@@ -4,8 +4,8 @@ This is a simple RESTful API built with Express.js that responds with "pong" whe
 
 ## Usage
 
-1. Install the dependencies using `npm install`.
-2. Start the server by running `node ping-pong.js`.
+1. Start by installing (if not already) this package with `npm i gameart-task-kilian`.
+2. Start the server by running `npm run pingpongserver`.
 3. Access the server at `http://localhost:3000/ping` in your browser or any API client.
 
 ## Customization
@@ -38,8 +38,9 @@ This code demonstrates various JavaScript functions that make use of `map`, `fil
 
 ## Usage
 
-1. Run the code using `node js-functions.js`.
-2. Access your IDEs terminal to view the output from the used functions.
+1. Start by installing (if not already) this package with `npm i gameart-task-kilian`.
+2. Run the code using `npm run jsfunctions`.
+3. Access your IDEs terminal to view the output from the used functions.
 
 ## Written Functions
 

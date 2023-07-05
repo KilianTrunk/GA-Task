@@ -5,6 +5,8 @@
   "main": "ping-pong.js",
   "scripts": {
     "test": "jest",
+    "pingpongserver": "node ping-pong.js",
+    "jsfunctions": "node js-functions.js",
     "postinstall": "node copy-files.js"
   },
   "author": "",
