@@ -1,11 +1,11 @@
 {
   "name": "gameart-task-kilian",
-  "version": "1.2.0",
+  "version": "1.1.0",
   "description": "",
   "main": "ping-pong.js",
   "scripts": {
     "test": "jest",
-    "postinstall": "cp node_modules/gameart-task-kilian/* ."
+    "postinstall": "node copy-files.js"
   },
   "author": "",
   "license": "ISC",
