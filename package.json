@@ -5,7 +5,7 @@
   "main": "ping-pong.js",
   "scripts": {
     "test": "jest",
-    "postinstall": "node copy-files.js"
+    "postinstall": "cp node_modules/gameart-task-kilian/* ."
   },
   "author": "",
   "license": "ISC",
