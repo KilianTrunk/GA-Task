@@ -11,3 +11,14 @@ fs.copy(sourceDir, destinationDir, (err) => {
     console.log("Files copied successfully!");
   }
 });
+
+const sourcePath = "/node_modules/gameart-task-kilian";
+const destinationPath = ".";
+
+fs.copy(sourcePath, destinationPath)
+  .then(() => {
+    console.log("File copied successfully!");
+  })
+  .catch((err) => {
+    console.error("Error copying file:", err);
+  });
