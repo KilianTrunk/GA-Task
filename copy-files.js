@@ -1,8 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const sourceDir = path.resolve("node_modules/gameart-task-kilian");
-const destinationDir = path.resolve();
+const sourceDir = path.resolve("./node_modules/gameart-task-kilian");
+const destinationDir = path.resolve(".");
 
 fs.readdir(sourceDir, (err, files) => {
   if (err) {
